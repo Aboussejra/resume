@@ -93,7 +93,7 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large Boussejra Amir}} & Email : \href{mailto:amir@boussejra.com}{amir@boussejra.com}\\ Adress: 16 rue des frères Chappe 42000 Saint-Etienne & Mobile : \href{tel:+33619147668}{+33619147668} \\
+  \textbf{{\Large Boussejra Amir}} & Email : \href{mailto:amir@boussejra.com}{amir@boussejra.com}\\ \textbf{\textit{Software/Machine Learning Engineer}}, 42000 Saint-Etienne & Mobile : \href{tel:+33619147668}{+33619147668} \\
 \end{tabular*}
 
 
@@ -106,6 +106,9 @@
     \resumeSubheading
       {University Lyon 1}{Lyon, France}
       {Master's degree in Applied Mathematics (Dual Degree with Ecole des Mines)}{Sep. 2020 -- Sep. 2022}
+    \resumeSubheading
+      {MPSI/MP*, Lycée Carnot}{Dijon, France}
+      {Preparation for national competitive entrance exams leading to top French Engi-neering Schools}{Sep. 2017 -- Sep. 2019}
   \resumeSubHeadingListEnd
 
 
@@ -115,13 +118,24 @@
 
     \resumeSubheading
       {Viavi Solutions}{Saint-Etienne, France}
-      {Embedded AI Software Engineer}{Dec 2022 - Present}
+      {Embedded ML Software Engineer}{Dec 2022 - Present}
       \resumeItemListStart
+      \resumeItem{Custom Machine Learning Solutions per client and Continuous Improvement}
+        { Automating retraining pipelines by adding to proprietary format info on when technician indicated in his report a missing event to have pipelines to automate re-training
+        on his data to continuously improve measurement algorithms on his type of data while complying to RGPD (not needing a Viavi engineer to label his data).
+        \textbf{Result:} Developped retraining pipelines and qualication pipes to check model drift and permit CI of models we can use in house. 
+        Real world use cases per client faces issues to be deployed due to difficulties setuping client cloud accesses (managed by US business unit). }
         \resumeItem{Detection of Fiber Faults in OTDR Traces}
-          {Optical Time Domain Reflectometer (OTDR) traces analysis using ML. Creation of Data Pipelines to go from proprietary format (.sor) to ML Exploitable data and Embedded ML Models. Introduction of CI/CD and MLOps principles for embedded ML project.
-          \\ \textbf{Result:} MySQL DB, Python ORM (SQLAlchemy) and custom Pytorch/Sklearn code to have independent routines to make transformations between .sor files $\rightarrow$ MySQL DB $\rightarrow$ preprocessed Dataset for ML $\rightarrow$ models and report metrics $\rightarrow$ ONNX models running on our hardware (inference in C).}
-        \resumeItem{Fire detection with Distributed Temperature Sensors}
-          {Description. \\ \textbf{Result:}}
+          {Optical Time Domain Reflectometer (OTDR) traces analysis using ML. Design and Implementation of data pipelines to go from proprietary format (.sor) to ML exploitable data and embedded ML models. Introduction of CI/CD and MLOps principles for embedded ML project.
+          \\ \textbf{Result:} Successful integration between high-level ML models, data pipelines in Python and storage in SQL to trace ML algorithm performacens. To exploitation on embedded devices using ONNX models and software/hardware optimization on resource-constrained devices (CPU-bound) and leveraging those new algorithms alongside legacy software to keep overall functionality intact.}
+      \resumeItem{Agile Software Development for Short-Term Projects}
+        {Among others, small projects contained
+          \begin{enumerate}
+            \item \textbf{CI/CD of Signal Processing Algorithms:} Developed an R\&D tool to automatically assess performance changes in signal processing algorithms using a dedicated mySQL database. Resulted in improved efficiency and reliability of signal processing systems by automating statistical performance measurements on client reference curves, ensuring global improvements with each development iteration.
+            \item \textbf{Library for custom files output:} Created dynamic library for a client use case to convert our propietary formats to json reports complying with their DB schema.
+            \item \textbf{Fire Detection with Distributed Temperature Sensors:} Leveraged the Raman effect to correlate fiber trace to temperature, enabling gradient monitoring over time for early diagnosis of fire starts. Successfully integrated this solution for Siemens' final client, incorporating gradient monitoring and custom setups to send alarms to their servers.
+          \end{enumerate}
+        }
       \resumeItemListEnd
 
 % --------Multiple Positions Heading------------ Same company
@@ -136,30 +150,30 @@
 
     \resumeSubheading
       {Epigno Corporation}{Tokyo, Japan}
-      {Full Time Full-Stack Software Engineer}{Dec 2022 - Present}
+      {Part Time Full-Stack Software Engineer}{Dec 2022 - Present}
       \resumeItemListStart
        \resumeItem{Continuous improvement of doctor's schedule optimization program}
          {With evolving client's demands and some new doctor's work law rising, there is a need for continuous improvement.
-         \\\textbf{Result:} Regular development of new logic, heuristics or specification changes needs relative to hospital's priority.}
+         \\\textbf{Result:} (Rust only) Development of new logic, heuristics or specification changes needs relative to hospital's priority and law regulations policies.}
       \resumeItemListEnd
    \resumeSubSubheading
       {Full Time Full-Stack Software Engineer}{Oct 2022 - Dec 2022}
       \resumeItemListStart
        \resumeItem{Integration in global app of doctor's schedule optimization program}
          {Serving the optimizer as a deployed Microservice in an EC2 instance on AWS, definition of APIs to communicate between Frontend in Vue3/TS, backend in PHP/Laravel, DB in MySQL and Rust optimizer. Development of websocket client/server to get gradual results returned to frontend and UI development to display results working with designer's advices.
-         \\\textbf{Result:} Optimizer and pipelines for webapp to work as a whole in production.}
+         \\\textbf{Result:} Working webapp in production for first sales. (Backend/DB/Frontend integration of optimizer's API)}
       \resumeItemListEnd
    \resumeSubSubheading
     {Part Time Optimization Engineer and Software Engineer}{Sep 2021 - Sep 2022}
     \resumeItemListStart
        \resumeItem{Doctor's schedule optimization program}
          {Rust development of a program for doctor's shift automatic allocation corresponding to their skills, needs, demands and law regulations, merging with a nurse shift allocation program to make a general hospital staff shift problem solver.
-         \\\textbf{Result:} MVP that works as intended on exemple database from Kanto's Hospital.}
+         \\\textbf{Result:} MVP that works as intended on example database from Kanto's Hospital.}
        \resumeItem{Devops General Work}
          {Upgrade a codebase's frontend from Node 8 to 16, backend from Python 3.4 to 3.9, upgrading dependencies, introducing a better dependency management using Poetry and introducing better formatting/linting best practices.
-         \\\textbf{Result:} Fresh working codebase with few bit rot.}
+         \\\textbf{Result:} Fresh working codebase with fewer bit rot.}
        \resumeItem{Surgery optimization program}
-         {Rewriting an Java surgery scheduling program MVP using Optaplanner that was slow and could not easely fit hand-cooked scheduling heuristics in Rust.
+         {Rewriting a Java surgery scheduling program MVP using Optaplanner that was slow and could not easily fit hand-cooked scheduling heuristics in Rust.
          \\\textbf{Result:} Working program with DB in PostgreSQL, frontend in Vue2/JS, Backend in Python/Flask yet project got stopped because product was sold before in depth tests with different databases.}
     \resumeItemListEnd
 
@@ -169,10 +183,7 @@
       \resumeItemListStart
         \resumeItem{AutoML tool for robotic applications based on ConvNets in Python}
           {Bibliographic research and implementation of state of the art bayesian optimization sampling and pruning algorithms to ensure fast convergence on continuous optimization problems with high cost per iteration.
-         \\\textbf{Result:} Automatic }
-        \resumeItem{AutoML tool from research to prod}
-          {Making it usable by robots
-         \\\textbf{Result:} laam }
+         \\\textbf{Result:} Custom AutoML tool integrated to their Windows 10 software training models using XML specifications}
       \resumeItemListEnd
 
       \resumeSubheading
@@ -190,8 +201,9 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Add Later}
-      {WIP}
+    \resumeSubItem{Raytracing in Special Relativity}
+      {Rust CLI tool capable of rendering (a 2D image) of a simple
+      scene in a non-Euclidean 3D space. code on several CPUs. \href{https://github.com/Aboussejra/relativistic_ray_tracing}{Github-Link} }
   \resumeSubHeadingListEnd
 
 %
@@ -199,12 +211,32 @@
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: Rust, Python, C, TS/JS, SQL, Bash, Latex}}
+     \textbf{Languages}{: Rust, Python, C/C++, TS, SQL, Bash, Latex}}
      \item{
-     \textbf{Technologies}{: Linux, Git, Docker, AWS, Vue, Flask, Pytorch/ML tools}
+     \textbf{Technologies}{: Linux, Git, Docker, AWS, Vue, Flask, FastApi, MySQL, PostgreSQL, Pytorch and all Data processing python software suite}
      }
  \resumeSubHeadingListEnd
 
+\section{Languages}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{French}{: Mother tongue}}
+     \item{
+     \textbf{English}{: Proficient/Bilingual (TOEIC 950), oral and written.}
+     }
+     \item{
+     \textbf{Spanish}{: Conversational, better oral skills than written due to lack of practice}
+     }
+ \resumeSubHeadingListEnd
 
+\section{Hobbies}
+\resumeSubHeadingListStart
+\resumeSubItem{Powerlifting}
+{Engaging in powerlifting as a hobby, old me was continuously striving to improve strength and performance in squat, bench press, and deadlift. New me just keeps up to shape.}
+\resumeSubItem{Reading HackerNews}
+{Passionate about staying up-to-date with the latest technology trends and industry news. Actively reading and engaging with the HackerNews community to gain insights into innovative technologies, programming languages, and emerging startups.}
+\resumeSubItem{Tweaking Electronic Devices}
+{Enjoying the process of tweaking electronic devices at home, software customization, and home automation. Constantly seeking ways to dodge ads and control software I am using.}
+\resumeSubHeadingListEnd
 %-------------------------------------------
 \end{document}
