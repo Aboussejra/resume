@@ -93,7 +93,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large Boussejra Amir}} & Email : \href{mailto:amir@boussejra.com}{amir@boussejra.com}\\ \textbf{\textit{Software/Machine Learning Engineer}}, 42000 Saint-Etienne & Mobile : \href{tel:+33619147668}{+33619147668} \\
+  \textbf{{\Large Boussejra Amir}} & Email : \href{mailto:amir@boussejra.com}{amir@boussejra.com}\\ \textbf{\textit{Software/Machine Learning/Data Engineer}}, 42000 Saint-Etienne & Mobile : \href{tel:+33619147668}{+33619147668} \\
+  \textbf{Available for November 2024}
 \end{tabular*}
 
 
@@ -120,19 +121,20 @@
       {Viavi Solutions}{Saint-Etienne, France}
       {Embedded ML Software Engineer}{Dec 2022 - Present}
       \resumeItemListStart
-      \resumeItem{Custom Machine Learning Solutions per client and Continuous Improvement}
-        { Automating retraining pipelines by adding to proprietary format info on when technician indicated in his report a missing event to have pipelines to automate re-training
-        on his data to continuously improve measurement algorithms on his type of data while complying to RGPD (not needing a Viavi engineer to label his data).
-        \textbf{Result:} Developped retraining pipelines and qualication pipes to check model drift and permit CI of models we can use in house. 
-        Real world use cases per client faces issues to be deployed due to difficulties setuping client cloud accesses (managed by US business unit). }
+      \resumeItem{Data-Driven custom ML improvements}
+        { MLOPS monitored solution for automating retraining pipelines on client's annotated data to continuously improve measurement algorithms.
+        \\Federated Learning for CI of base models.
+        \\ \textbf{Result:} Developed retraining/qualification pipelines to assess CI of models, linked with MLFlow server to monitor models.
+        Managed project to get ability to connect to client's proprietaty cloud (managed by Viavi US) to retrieve client's data, 
+        created dedicated docker envs to train on on-premise servers client specific models and push back updated models to cloud (syncs with embedded platforms when network is available).}
         \resumeItem{Detection of Fiber Faults in OTDR Traces}
           {Optical Time Domain Reflectometer (OTDR) traces analysis using ML. Design and Implementation of data pipelines to go from proprietary format (.sor) to ML exploitable data and embedded ML models. Introduction of CI/CD and MLOps principles for embedded ML project.
           \\ \textbf{Result:} Successful integration between high-level ML models, data pipelines in Python and storage in SQL to trace ML algorithm performacens. To exploitation on embedded devices using ONNX models and software/hardware optimization on resource-constrained devices (CPU-bound) and leveraging those new algorithms alongside legacy software to keep overall functionality intact.}
       \resumeItem{Agile Software Development for Short-Term Projects}
-        {Among others, small projects contained
+        {
           \begin{enumerate}
             \item \textbf{Bugfixing for Major Releases:} Twice a year a major release is issued, and all efforts are into treating found bugs. Being bugs found by PLM/Client/Engineer. Mostly debugging complex algorithmic code that require gdb skills. 
-            \item \textbf{Tooling deployment:} Helped deploy custom local PyPi and DockerHub servers to favor intra-engineer package sharing.
+            \item \textbf{Tooling deployment:} Deploy custom local PyPi, DockerHub servers to favor intra-engineer package sharing. Automated tests writing linked with Jenkins server.
             \item \textbf{CI/CD of Signal Processing Algorithms:} Developed an R\&D tool to automatically assess performance changes in signal processing algorithms using a dedicated mySQL database. Resulted in improved efficiency and reliability of signal processing systems by automating statistical performance measurements on client reference curves, ensuring global improvements with each development iteration.
             \item \textbf{Library for custom files output:} Created dynamic library for a client use case to convert our propietary formats to json reports complying with their DB schema.
             \item \textbf{Fire Detection with Distributed Temperature Sensors:} Leveraged the Raman effect to correlate fiber trace to temperature, enabling gradient monitoring over time for early diagnosis of fire starts. Successfully integrated this solution for Siemens' final client, incorporating gradient monitoring and custom setups to send alarms to their servers.
@@ -158,6 +160,7 @@
          {With evolving client's demands and some new doctor's work law rising, there is a need for continuous improvement.
          \\\textbf{Result:} (Rust only) Development of new logic, heuristics or specification changes needs relative to hospital's priority and law regulations policies.}
       \resumeItemListEnd
+      \pagebreak
    \resumeSubSubheading
       {Full Time Full-Stack Software Engineer}{Oct 2022 - Dec 2022}
       \resumeItemListStart
@@ -215,7 +218,7 @@
    \item{
      \textbf{Languages}{: Rust, Python, C/C++, TS, SQL, Bash, Latex}}
      \item{
-     \textbf{Technologies}{: Linux, Git, Docker, Jenkins, AWS, Vue, Flask, FastApi, MySQL, PostgreSQL, Kedro, Pytorch and all Data processing python software suite}
+     \textbf{Technologies}{: Linux, Git, Docker, Jenkins, AWS, Vue, Flask, FastApi, MySQL, PostgreSQL, Kedro, MLFlow, Pytorch, Pandas, Streamlit, Dash, Sklearn, Numpy}
      }
  \resumeSubHeadingListEnd
 
