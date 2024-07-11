@@ -117,30 +117,27 @@
   \resumeSubHeadingListStart
     %--- Notes for later: Reduce overall Epigno and Viavi to make place for other, add experience taking care of interns.
     %--- Make choices, more Signal processing, more embedded, we'll see later
-    \resumeSubheading
-      {Viavi Solutions}{Saint-Etienne, France}
-      {Embedded ML Software Engineer}{Dec 2022 - Present}
-      \resumeItemListStart
-      \resumeItem{Data-Driven custom ML improvements}
-        { MLOPS monitored solution for automating retraining pipelines on client's annotated data to continuously improve measurement algorithms.
-        \\Federated Learning for CI of base models.
-        \\ \textbf{Result:} Developed retraining/qualification pipelines to assess CI of models, linked with MLFlow server to monitor models.
-        Managed project to get ability to connect to client's proprietaty cloud (managed by Viavi US) to retrieve client's data, 
-        created dedicated docker envs to train on on-premise servers client specific models and push back updated models to cloud (syncs with embedded platforms when network is available).}
-        \resumeItem{ML enhanced detection of Fiber Faults in OTDR Traces}
-          {Optical Time Domain Reflectometer (OTDR) traces analysis using ML. Design and Implementation of data pipelines to go from proprietary format (.sor) to ML exploitable data and embedded ML models. Introduction of CI/CD and MLOps principles for embedded ML project.
-          \\ \textbf{Result:} Successful integration between high-level ML models, data pipelines in Python and storage in SQL to trace ML algorithm performances. To exploitation on embedded devices using ONNX models and software/hardware optimization on resource-constrained devices (CPU-bound) and leveraging those new algorithms alongside legacy software to keep overall functionality intact.}
-      \resumeItem{Agile Software Development for Short-Term Projects}
-        {
-          \begin{enumerate}
-            \item \textbf{Bugfixing for Major Releases:} Twice a year a major release is issued, and all efforts are into treating found bugs. Being bugs found by PLM/Client/Engineer. Mostly debugging complex algorithmic code that require gdb skills. 
-            \item \textbf{Tooling deployment:} Deploy custom local PyPi, DockerHub servers to favor intra-engineer package sharing. Automated tests writing linked with Jenkins server.
-            \item \textbf{CI/CD of Signal Processing Algorithms:} Developed an R\&D tool to automatically assess performance changes in signal processing algorithms using a dedicated mySQL database. Resulted in improved efficiency and reliability of signal processing systems by automating statistical performance measurements on client reference curves, ensuring global improvements with each development iteration.
-            \item \textbf{Library for custom files output:} Created dynamic library for a client use case to convert our propietary formats to json reports complying with their DB schema.
-            \item \textbf{Fire Detection with Distributed Temperature Sensors:} Leveraged the Raman effect to correlate fiber trace to temperature, enabling gradient monitoring over time for early diagnosis of fire starts. Successfully integrated this solution for Siemens' final client, incorporating gradient monitoring and custom setups to send alarms to their servers.
-          \end{enumerate}
-        }
-      \resumeItemListEnd
+\resumeSubheading
+    {Viavi Solutions}{Saint-Etienne, France}
+    {Embedded ML Software Engineer}{Dec 2022 - Aug 2024}
+    \resumeItemListStart
+        \resumeItem{Data-Driven Custom ML Improvements}
+            {Developed MLOps-monitored solutions for automating retraining pipelines on client's annotated data to continuously improve measurement algorithms. Implemented federated learning for CI of base models.
+            \\\textbf{Result:} Established retraining/qualification pipelines linked with an MLFlow server for model monitoring. Managed project connectivity to Viavi US's proprietary cloud for data retrieval and model updates, utilizing Docker environments for on-premise training and syncing with embedded platforms.}
+        \resumeItem{ML-Enhanced Detection of Fiber Faults in OTDR Traces}
+            {Analyzed OTDR traces using ML. Designed and implemented data pipelines from proprietary (.sor) format to ML-exploitable data and embedded ML models. Introduced CI/CD and MLOps principles for the project.
+            \\\textbf{Result:} Achieved successful integration of high-level ML models, data pipelines in Python, and SQL storage to trace ML algorithm performances. Deployed ONNX models on resource-constrained embedded devices, ensuring compatibility with legacy software.}
+        \resumeItem{Agile Software Development for Short-Term Projects}
+            {
+                \begin{itemize}
+                    \item \textbf{Bugfixing for Major Releases:} Focused on debugging complex algorithmic code using gdb for twice-yearly major releases.
+                    \item \textbf{Tooling Deployment:} Deployed local PyPi and DockerHub servers for intra-engineer package sharing and wrote automated tests linked with Jenkins.
+                    \item \textbf{CI/CD of Signal Processing Algorithms:} Developed an R\&D tool to automate performance assessments on reference curves of signal processing algorithms, improving efficiency and reliability.
+                    \item \textbf{Custom Client Developments:} Created a dynamic library for converting proprietary formats to JSON reports aligned with client database schema. Implemented early fire diagnosis using the Raman effect for Siemens, integrating gradient monitoring and custom alarms.
+                    \item \textbf{Team Management:} Supervised 1 graduate and 1 intern on Signal Processing projects (Non Reflective EOF detection, Synthetic OTDR Data Generation).
+                \end{itemize}
+            }
+    \resumeItemListEnd
 
 % --------Multiple Positions Heading------------ Same company
 %    \resumeSubSubheading
